@@ -1,6 +1,6 @@
 # HRV-Analysis
 
-The purpose of this project is to create an enviroment for the efficient calculation of HRV measures with a resolution sufficient to resolve the relevant fluctuations OF heart rate. 
+The purpose of this project is to create an enviroment for the efficient calculation of HRV measures with a resolution sufficient to resolve relevant fluctuations of heart rate. 
 
 The PSD.c file is from the the Power Spectral Estmation algorithm in Chapter 13 of Numerical Recipes
 
@@ -20,9 +20,14 @@ g++ AsciiToBin.cc -o asc2bin
 Place these executables into a "bin" folder on your systems PATH environmental variable.
 
 The "asc2bin" command is utilized in the shell script "Asc2Bin.sh". This script converts a data file into binary to 
-speed-up loading of data for processing.
-
-The shell script "ApplyPSD.sh" sets up the overlap and number of segment parameters. It is utilized by the example shell 
-script "RunHRvar.sh"
+speed-up loading of data for processing. For example,
 
 Asc2Bin.sh WT13-pre-rr.dat
+
+Then, you can run the  script "ApplyPSD.sh" which sets up the overlap and number of segment parameters based on the size of floats and the size of the binary file.
+
+ApplyPSD.sh WT13-pre-rr.bin
+
+
+
+
