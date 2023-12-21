@@ -1,5 +1,7 @@
 # HRV-Analysis
 
+The purpose of this project is to create an enviroment for the efficient calculation of HRV measures with a resolution sufficient to resolve the relevant fluctuations OF heart rate. 
+
 The PSD.c file is from the the Power Spectral Estmation algorithm in Chapter 13 of Numerical Recipes
 
 https://numerical.recipes/
